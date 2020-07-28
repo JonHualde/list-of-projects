@@ -1,0 +1,58 @@
+.previewer_container {
+  border: 1px solid black;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+
+  h1 {
+    position: absolute;
+    text-decoration: underline;
+  }
+
+  .code-preview-container {
+    width: 40%;
+
+    .values {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+      height: 50%;
+
+      input,
+      label {
+        width: 30%;
+        margin: 0 auto;
+      }
+    }
+
+    .valuesToCopy {
+      display: flex;
+      height: 50%;
+      justify-content: left;
+      align-items: center;
+
+      .clipboard {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        border: 1px dashed grey;
+        padding: 4vh 4vw;
+        font-size: 16px;
+      }
+    }
+  }
+
+  .form-preview-container {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .live-border {
+      border: 6px solid rgb(223, 44, 20);
+      padding: 4vw 5vw;
+      font-size: 16px;
+    }
+  }
+}
